@@ -1,0 +1,14 @@
+---
+kind: pipeline
+type: exec
+name: Turning Off Pc
+
+platform:
+  os: linux
+  arch: amd64
+  
+step:
+- name: turn off
+  commands:
+  - export kubectl:"/usr/local/bin"
+  - kubectl cluster-info
